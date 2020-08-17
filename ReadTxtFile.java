@@ -28,7 +28,10 @@ public class ReadTxtFile {
         while ((line = br.readLine()) != null) {
 
             //TODO 筛选条件
-
+            if (line.contains("0000001173") || line.contains("/c/0000001173")) {
+                //"D:\9_Work\Company\数据库\1133.txt"
+                WriteFile.write("D:\\9_Work\\Company\\数据库\\11334.txt",line);
+            }
         }
 
         br.close();
